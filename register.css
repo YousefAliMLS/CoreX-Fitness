@@ -1,0 +1,114 @@
+/* --- Global Styles --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    
+    /* --- Background Image Settings --- */
+    background-image: url("cover page.avif"); /* Path to your cover image */
+    background-size: cover;          /* Cover the entire page */
+    background-position: center;     /* Center the image */
+    background-repeat: no-repeat;    /* Do not repeat the image */
+    background-attachment: fixed;    /* Image stays fixed when scrolling */
+    /* --- End Background Settings --- */
+    
+    background-color: #4630d5; /* Fallback color if image fails */
+    color: #ffffff; /* White text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 2rem 0; /* Add padding for long forms on small screens */
+}
+
+/* --- Heading --- */
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-size: 3.8rem; /* decreased a bit */
+    color: #73a9f4;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+
+
+/* --- Form Container --- */
+form {
+    background-color: #121822; /* Dark blue box */
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+/* --- Labels --- */
+label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #cfd8e3;
+    margin-bottom: 8px;
+}
+
+/* --- Input Fields (Text, Email, Password, AND Number) --- */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #2d3a4b;
+    border-radius: 5px;
+    background-color: #1c2433;
+    color: #ffffff;
+    box-sizing: border-box;
+    /* Note: Your inline HTML style="width: 60px;" 
+       will override "width: 100%" for the number fields. */
+}
+
+/* Placeholder */
+input::placeholder {
+    color: #778da9;
+}
+
+/* --- Register Button --- */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3aa7ff;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem; /* Add some space before the button */
+}
+
+/* Hover */
+input[type="submit"]:hover {
+    background-color: #1e90ff;
+}
+
+/* --- Bottom Links --- */
+a {
+    color: #3aa7ff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-top: 1.5rem; /* Give link some space from form */
+    display: inline-block; /* Allows margin-top to work */
+    
+    /* Add a subtle background to make it readable over the image */
+    background-color: rgba(12, 20, 18, 0.6); /* Dark, semi-transparent */
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: rgba(18, 24, 34, 0.8); /* Darker on hover */
+}
