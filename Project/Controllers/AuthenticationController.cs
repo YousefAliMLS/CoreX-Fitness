@@ -87,6 +87,24 @@ namespace Project.Controllers
             return Ok("Password has been changed succesfully. ");
         }
 
+        [HttpPost("updateUserInformation")]
+        public async Task<IActionResult> updateUserInformation(UpdateUserInformationDTO requset)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == requset.email);
+            if(!BCrypt.Net.BCrypt.Verify(request.password, user.passwordHashed))
+            {
+                return BadRequest("Incorrect password.");
+            }
+            user.Name = request.userName;
+            user.passwordHashed = BCrypt.Net.BCrypt.HashPassword(request.password);
+            user.Weight = request.weight;
+            user.Height = request.height;
+            user.Age = request.age;
+            user.Gender = request.gender;
+            await _context.SaveChangesAsync();
+            return Ok("User information has been updated successfully.");
+
+        }
         private string CreateToken(User user)
         {
             //Statements about the user(id, name , etc...)
