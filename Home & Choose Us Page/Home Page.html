@@ -2,42 +2,66 @@
 <html>
     <head>
         <title>CoreX Fitness</title>
+      <link href="Home Page.css" rel="stylesheet">
     </head>
 
     <body>
         <header>
-            <h1>CoreX Fitness</h1>
+            <h1 class="main-title">CoreX Fitness</h1>
             <nav>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Choose Us</a></li>
-                    <li><a href="">Programs</a></li>
-                    <li><a href="">BMI Calculator</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#choose-us">Choose Us</a></li>
+                    <li><a href="#">Programs</a></li>
+                    <li><a href="#">BMI Calculator</a></li>
                 </ul>
             </nav>
-            <button aria-label="Go to Profile">👤</button>
+            <button class="profile-button" aria-label="Go to Profile">👤</button>
         </header>
 
-        <section>
+        <section id="home" class="home">
             <h1>Welcome to CoreX Fitness</h1>
-            <p>Keep Your</p>
+            <p1>Keep Your</p1>
             <h2>Body Fit & Strong</h2>
-            <p>In here we will help you to shape and build your ideal body and live your life to the fullest.</p>
+            <p class="description">In here we will help you to shape and build your ideal body and live your life to the fullest.</p>
+            
+            <div class="hero-image">   
+                <img src="OIP.webp" alt="Hero Image Placeholder">
+            </div>
         </section>
+      
             <br><br>
-        <section>
-            <h3>Opening Hours</h3>
-            <p>24/7</p>
-            <h2>Why Choose Us</h2>
-            <p>Because your goals are our mission. We guide you, support you, and challenge you — step by step — until you win.</p> <br>
+              
+        <section id="choose-us" class="choose-us">
 
-            <p>Structured workout programs</p>
-            <p>Bulking & Cutting plans tailored to your body</p>
-            <p>Video training for every exercise step-by-step</p>
-            <p>Continuous tracking to see your progress</p>
+            <div class="hours-hero">
+               <div class="hero-img"></div>
+               <div class="opening-hours">
+                 <h3>Opening Hours</h3>
+                 <p>24/7</p>
+               </div>
+            </div>
 
-            <p>Our Program</p>
-            <h2>Build Your Best Body</h2>
+            <div class="why-us">
+               <h2>Why Choose Us</h2>
+               <p>Because your goals are our mission. We guide you, support you, and challenge you — step by step — until you win.</p> <br>
+
+               <div class="features">
+                  <div class="feature"><p>Structured workout programs</p></div>
+                  <div class="feature"><p>Bulking & Cutting plans tailored to your body</p></div>
+                  <div class="feature"><p>Video training for every exercise step-by-step</p></div>
+                  <div class="feature"><p>Continuous tracking to see your progress</p></div>
+               </div>
+            </div>
+
         </section>
+
+        <section class="program">
+            <div class="program">
+                <p>Our Program</p>
+                <h2>Build Your Best Body</h2>
+            </div>
+        </section>
+        
     </body>
 </html>
