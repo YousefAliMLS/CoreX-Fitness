@@ -50,7 +50,8 @@ namespace Project.Controllers
                 Email = request.email,
                 Weight = request.weight,
                 Height = request.height,
-                Age = request.age
+                Age = request.age,
+                Gender = request.gender
             };
 
             _context.Users.Add(user);
