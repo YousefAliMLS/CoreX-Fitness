@@ -50,7 +50,7 @@ form.addEventListener("submit", async function(e) {
     }
     console.log("test1");
     try{
-        const respone = await fetch("https://192.168.1.101:7019/api/Authentication/register", {
+        const respone = await fetch("https://127.0.0.1:7019/api/Authentication/register", {
             method:"POST",
             headers: {"Content-Type":"application/json"},
             body: JSON.stringify({
