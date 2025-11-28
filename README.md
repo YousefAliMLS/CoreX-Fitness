@@ -94,9 +94,9 @@ cd Project
 ### 3. Frontend Setup
 Since the frontend is built with standard web technologies, no build step is required.
 
-1.  Navigate to the `fittrack-client` folder.
-2.  **Option A (Simple):** Open the `index.html` file directly in your browser.
-3.  **Option B (Recommended):** Use a simple static server (like "Live Server" in VS Code) to serve the `fittrack-client` folder. This avoids common CORS issues when the browser tries to fetch data from the API.
+1.  Navigate to the `Front-end` Branch.
+2.  **Option A (Simple):** Open the `Registeration Page.html` file directly in your browser.
+3.  **Option B (Recommended):** Use a simple static server (like "Live Server" in VS Code) to serve the `Registeration Page.html` folder. This avoids common CORS issues when the browser tries to fetch data from the API.
 
 ---
 
