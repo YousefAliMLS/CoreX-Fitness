@@ -79,7 +79,7 @@ Follow these instructions to get the backend API running on your local machine.
 ## 👥 Team
 
 *   **Yousef Mahmoud Ali** - Fullstack Developer
-*   *Mostafa abd Elhamied* - *Frontend Developer*
+*   *Mostafa Abd Elhamied* - *Frontend Developer*
 *   *Mahmoud Khaled* - *Frontend Developer*
 *   *SalahEldin Mohamed* - *Backend Developer*
 
